@@ -1,205 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title> Pschefer_projects </title>
-  <meta name="description" content="This webpage serves as a display of my different software projects">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Schefer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- use .header to target the class and #header to target the ID -->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                }
+            }
+        }
+    </script>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+            }
+    </script>
+
 </head>
-  <body>  
-    <!-- This is a comment -->
-
-
-    <!-- Headings -->
-    <h1>
-      HTML Tutorial
-    </h1>
-    <h2>
-      H2 Headings
-    </h2>
-    <h3>
-      H3 Headings just to show size
-    </h3>
-
-    <!-- Paragraph -->
-    <hr>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-      rem voluptatibus consequatur dolores soluta dign  issimos nam quaerat.
-      Hic, quasi dolorum autem quisquam corporis mollitia consequuntur
-      magnam facilis. Nulla, corrupti atque.
-    </p>
-
-    <br><br><br>
-
-    <!-- Lines to separate your content -->
-    <hr>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-       praesentium iure quod dignissimos architecto tempora molestias 
-       vero. Rem, reprehenderit possimus?
-    </p>
-
-
-
-    <!-- Linebreaks -->
-    <br>
-
-    <!-- Links -->
-
-    <a href="https://google.ch" target="_blank"> Click me!</a>
-
-    <!-- Lists -->
-      <ul>
-        <!-- List item-->
-        <li>List item one</li>
-        <li>List item two</li>
-        <li>List item three</li>
-      </ul>
-
-      <ol>
-        <!-- List item-->
-        <li>List item one</li>
-        <li>List item two</li>
-        <li>List item three</li>
-      </ol>
-
-      <!-- Text formatting -->
-      <!-- Bold: <strong> -->
-      <!-- ital: <em> -->
-      <!-- Underline: <u> -->
-      <!-- highlight: <mark> -->
-      <!-- subscript: <sub> -->
-      <!-- superscript: <sup> -->
-
-      <p>
-        This word is going to be <strong>Bold</strong>
-      </p>
-
-      <!-- Div only groups your elements -->
-      <div>
-        <h1>
-          Heading of Div 1
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Repellendus alias nostrum error iste est inventore soluta 
-           tempore sequi distinctio corporis!
-        </p>
-
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
-
-      <!-- Classes and ID's: identify a group of elements for mult. purposes-->
-      <hr>
-      <div class="hello">
-        <h1>
-          Hello
-        </h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-           Repellendus, enim adipisci! Libero qui quod in corrupti
-            neque exercitationem, omnis quisquam?
-        </p>
-      </div>
-      <div id="hello-2">
-        <h1>
-          Hello-2
-        </h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-           Repellendus, enim adipisci! Libero qui quod in corrupti
-            neque exercitationem, omnis quisquam?
-        </p>
-      </div>
-
-      <hr>
-      <!-- Blog Article -->
-      <!-- write div.article to shortcut create a class -->
-      <div class="article">
-        <h3> This is an article </h3>
-        <small> Posted by: Philip </small>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam aut quos eos consequuntur delectus dolor voluptates perferendis suscipit sint?
-        </p>
-        <a href="#">To top of page</a>
-
-      </div>
-      <br>
-      <hr>
-
-      <!-- Tables -->
-
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Phone Number</th>
-          </tr>
-          
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>smith</td>
-            <td>073107</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>lowe</td>
-            <td>078301</td>
-          </tr>
-
-        </tbody>
-      </table>
       
-      <!-- Buttons -->
-      <button>Click</button>
-      <button disabled>Disabled</button>
-      <button reset>Reset</button>
-
-      <hr>
-      <!-- Form -->
-      <form>
-        <label for="First Name">First Name</label>
-        <br><br>
-        <input type="text" placeholder="Enter First Name">
-        <br>
-        <label for="First Name">Email</label>
-        <br><br>
-        <input type="email" required>
-        <br><br>
-        <input type="submit" value="Submit">
-
-        <!-- Form select list -->
-        <select>
-          <option value="" disabled selected>--Select--</option>
-          <option value="">option1</option>
-          <option value="">option2</option>
-          <option value="">option3</option>
-        </select>
-
-        <br>
-        <br>
-        <hr>
-        <label for="Message">Message</label>
-        <textarea></textarea>
-      </form>
-
-      <!-- Images -->
-      <img src="https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg" alt="Brain out of Tablet">
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">open</span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <header class="Main Header" id="header-main">
+            <div class="Header">
+                <h1> Software Projects </h1>
+                <div id="box1">Discover my Projects</div>
     
-      <!-- Navigation Bar -->
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    <script src="js/scripts.js"></script>
-  </body>
+            </div>
+            <!-- short dropdown menu code
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="float:left">Projects</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="about.html">About me</a>
+                  <a href="HTML Tutorial">HTML</a>
+                  <a href="Sudoku">Sudoku</a>
+                </div>
+              </div>
+            //-->
+        </header>
+        <section>
+    
+            
+        </section>
+        <div class="parent">
+            <div class="child1">
+                <button class="child1button" onclick="location.href='html_tutorial.html'"> 
+                    Discover HTML
+                </button>
+            </div>
+            <div class="child2">
+                <button class="child2button">
+                    Play Sudoku
+                </button>
+            </div>
+            <div class="child3"></div>
+        </div>
+      </div>
+    
+</body>
 </html>
-
-
