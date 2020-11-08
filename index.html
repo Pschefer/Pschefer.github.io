@@ -48,23 +48,37 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+        <a href="about.html">CV</a>
+        <a href="html_tutorial.html">HTML</a>
+        <a href="sudoku.html">Sudoku</a>
         <a href="#">Contact</a>
       </div>
+
+    
       
       <!-- Use any element to open the sidenav -->
-      <span onclick="openNav()">open</span>
+      <span onclick="openNav()" class="sidenavspan"></span>
       
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       <div id="main">
         <header class="Main Header" id="header-main">
+            <div onclick="openNav()" class="menu-icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+                
+            </div>
             <div class="Header">
-                <h1> Software Projects </h1>
+                <h1> Philip Schefer </h1>
                 <div id="box1">Discover my Projects</div>
     
             </div>
+
+            
+
+
+        
             <!-- short dropdown menu code
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn" style="float:left">Projects</button>
