@@ -1,85 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Philip Schefer</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- use .header to target the class and #header to target the ID -->
     <script>
-        /* When the user clicks on the button,
+      /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
             }
+          }
         }
+      };
     </script>
 
     <script>
-        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-            }
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
 
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-                document.body.style.backgroundColor = "white";
-            }
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
     </script>
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="about.html">CV</a>
-        <a href="html_tutorial.html">HTML</a>
-        <a href="sudoku.html">Sudoku</a>
-        <a href="#">Contact</a>
-      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="about.html">CV</a>
+      <a href="html_tutorial.html">HTML</a>
+      <a href="sudoku.html">Sudoku</a>
+      <a href="tic_tac_toe.html">Tic Tac Toe</a>
+      <a href="#">Contact</a>
+    </div>
 
-    
-      
-      <!-- Use any element to open the sidenav -->
-      <span onclick="openNav()" class="sidenavspan"></span>
-      
-      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-      <div id="main">
-        <header class="Main Header" id="header-main">
-            <div onclick="openNav()" class="menu-icon">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()" class="sidenavspan"></span>
 
-                
-            </div>
-            <div class="Header">
-                <h1> Philip Schefer </h1>
-                <div id="box1">Discover my Projects</div>
-    
-            </div>
+    <!-- Add all page content inside this div if you want the side 
+        nav to push page content to the right (not used if you only
+         want the sidenav to sit on top of the page -->
+    <div id="main">
+      <header class="Main Header" id="header-main">
+        <div onclick="openNav()" class="menu-icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="Header">
+          <h1>Philip Schefer</h1>
+          <div id="box1">Discover my Projects</div>
+        </div>
 
-            
-
-
-        
-            <!-- short dropdown menu code
+        <!-- short dropdown menu code
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn" style="float:left">Projects</button>
                 <div id="myDropdown" class="dropdown-content">
@@ -89,25 +84,22 @@
                 </div>
               </div>
             //-->
-        </header>
-        <section>
-    
-            
-        </section>
-        <div class="parent">
-            <div class="child1">
-                <button class="child1button" onclick="location.href='html_tutorial.html'"> 
-                    Discover HTML
-                </button>
-            </div>
-            <div class="child2">
-                <button class="child2button">
-                    Play Sudoku
-                </button>
-            </div>
-            <div class="child3"></div>
+      </header>
+      <section></section>
+      <div class="parent">
+        <div class="child1">
+          <button
+            class="child1button"
+            onclick="location.href='html_tutorial.html'"
+          >
+            Discover HTML
+          </button>
         </div>
+        <div class="child2">
+          <button class="child2button">Play Sudoku</button>
+        </div>
+        <div class="child3"></div>
       </div>
-    
-</body>
+    </div>
+  </body>
 </html>

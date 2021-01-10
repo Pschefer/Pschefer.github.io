@@ -1,0 +1,31 @@
+.hidden {
+  display: none;
+}
+
+body.dark {
+  background-color: grey;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-size: 45pt;
+}
+
+#setup-game {
+  display: flex;
+  justify-content: center;
+}
+
+#setup-game > * {
+  margin-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+}
