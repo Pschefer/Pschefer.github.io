@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
-</head>
-<body>
-    <header>
-        <h1> My About Page</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <p> This is an about section</p>
-        <p> Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Dolorum itaque id 
-            adipisci sapiente perspiciatis dolor
-             numquam commodi voluptatem quas nam?</p>
-    </section>
-    <aside>
-        <ul>
-            <li>Item One</li>
-            <li>Item Two</li>
-        </ul>
-    </aside>
-    <footer>
-        <p>Copyright &copy; 2020; All Rights Resered</p>
-    </footer>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="about.html">CV</a>
+      <a href="html_tutorial.html">HTML</a>
+      <a href="sudoku.html">Sudoku</a>
+      <a href="tic_tac_toe.html">TicTacToe</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()" class="sidenavspan"></span>
+
+    <div id="main">
+    <header class="Main Header" id="header-main">
+      <div onclick="openNav()" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <div class="Header">
+        <h1>About my Website</h1>
+      </div>
+    </header>
+    <div class="about_text_background">
+    <section class="webpage_about">
+      <p>This website exists with the purpose of showing you who I am and what I'm up to these days. There are some small software projects on this website which I created to learn javascript. The website as a whole was created in order to sharpen my HTML / CSS skills.</p>
+      <br>
+      <p>Furthermore all my projects which I've done during my studies at ETH</p>
+      
+    </section>
+    </div>
     
-</body>
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Info</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2020; All Rights Reserved</p>
+    </footer>
+  </body>
+</div>
 </html>

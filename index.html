@@ -44,6 +44,17 @@
       }
     </script>
   </head>
+
+  <style>
+    body {
+      background-image: url("4klandscape.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    ul {
+      list-style-type: none;
+    }
+  </style>
   <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -52,7 +63,7 @@
       <a href="about.html">CV</a>
       <a href="html_tutorial.html">HTML</a>
       <a href="sudoku.html">Sudoku</a>
-      <a href="tic_tac_toe.html">Tic Tac Toe</a>
+      <a href="tic_tac_toe.html">TicTacToe</a>
       <a href="#">Contact</a>
     </div>
 
@@ -71,7 +82,7 @@
         </div>
         <div class="Header">
           <h1>Philip Schefer</h1>
-          <div id="box1">Discover my Projects</div>
+          <div id="box1">Discover me and my Projects</div>
         </div>
 
         <!-- short dropdown menu code
@@ -88,18 +99,88 @@
       <section></section>
       <div class="parent">
         <div class="child1">
-          <button
-            class="child1button"
-            onclick="location.href='html_tutorial.html'"
-          >
-            Discover HTML
+          <button class="child1button" onclick="location.href='about.html'">
+            <span class="line-1">About this Webpage</span>
+            <span class="line-2"
+              >Description about the purpose and the contents of this
+              website</span
+            >
           </button>
         </div>
+
         <div class="child2">
-          <button class="child2button">Play Sudoku</button>
+          <button class="child2button" onclick="location.href='about_me.html'">
+            <span class="line-1">About Me</span>
+            <span class="line-2"
+              >Get to know me and my life better by clicking here</span
+            >
+          </button>
         </div>
-        <div class="child3"></div>
+
+        <div class="child3">
+          <button
+            class="child3button"
+            onclick="location.href='semester_proj.html'"
+          >
+            <span class="line-1">Semester Projects</span>
+            <span class="line-2"
+              >Overview of my 2 Semester Projects that I did during my Master's
+              Degree at ETH</span
+            >
+          </button>
+        </div>
+
+        <div class="child4">
+          <button class="child4button" onclick="location.href='master.html'">
+            <span class="line-1">Master's Thesis (pending)</span>
+            <span class="line-2"
+              >Master's Thesis on the subject of decoding ADS-B airplane
+              messages by using a Transformer Network</span
+            >
+          </button>
+        </div>
+
+        <div class="child5">
+          <button class="child5button" onclick="location.href='chess.html'">
+            <span class="line-1">Chess AI (pending)</span>
+            <span class="line-2"
+              >Play a game of chess against a computer opponent and see if you
+              can beat him ...</span
+            >
+          </button>
+        </div>
+
+        <div class="child6">
+          <button class="child6button" onclick="location.href='sudoku.html'">
+            <span class="line-1">Sudoku</span>
+            <span class="line-2"
+              >Play a game of Sudoku in three different levels of difficulties,
+              but watch out as the time is ticking ...</span
+            >
+          </button>
+        </div>
+
+        <div class="child7">
+          <button
+            class="child7button"
+            onclick="location.href='tic_tac_toe.html'"
+          >
+            <span class="line-1">Tic Tac Toe</span>
+            <span class="line-2"
+              >Play a game of Tic Tac Toe against a computer opponent</span
+            >
+          </button>
+        </div>
       </div>
     </div>
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Info</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2020-2021 Philip Schefer. All Rights Reserved</p>
+    </footer>
   </body>
 </html>

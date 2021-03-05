@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/tictactoestyle.css" />
-    <title>Document</title>
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script>
       /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
+          toggle between hiding and showing the dropdown content */
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
@@ -59,49 +58,38 @@
     <!-- Use any element to open the sidenav -->
     <span onclick="openNav()" class="sidenavspan"></span>
 
-    <!-- Add all page content inside this div if you want the side 
-        nav to push page content to the right (not used if you only
-         want the sidenav to sit on top of the page -->
     <div id="main">
-      <header class="Main Header" id="header-main">
-        <div onclick="openNav()" class="menu-icon">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        
-
-        <!-- short dropdown menu code
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn" style="float:left">Projects</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="about.html">About me</a>
-                  <a href="HTML Tutorial">HTML</a>
-                  <a href="Sudoku">Sudoku</a>
-                </div>
-              </div>
-            //-->
-      </header>
-    <div class="Header">Tic Tac Toe</div>
-    <div class="container">
-      <div class="row border-b">
-        <div class="col border-r"></div>
-        <div class="col border-r"></div>
-        <div class="col"></div>
+    <header class="Main Header" id="header-main">
+      <div onclick="openNav()" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </div>
-      <div class="row border-b">
-        <div class="col border-r"></div>
-        <div class="col border-r"></div>
-        <div class="col"></div>
+      <div class="Header">
+        <h1>Master's Thesis</h1>
       </div>
-      <div class="row">
-        <div class="col border-r"></div>
-        <div class="col border-r"></div>
-        <div class="col"></div>
-      </div>
+    </header>
+    <div class="about_text_background">
+    <section class="webpage_about">
+        <h2> Decoding ADS-B Messages with Deep Learning using Past Message Information</h2>
+        <br>
+        <br>
+      <p>This website exists with the purpose of showing you who I am and what I'm up to these days. There are some small software projects on this website which I created to learn javascript. The website as a whole was created in order to sharpen my HTML / CSS skills.</p>
+      <br>
+      <p>Furthermore all my projects which I've done during my studies at ETH</p>
+      
+    </section>
     </div>
-    <script src="js/tictactoe.js"></script>
+    
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Info</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2020; All Rights Reserved</p>
+    </footer>
   </body>
-
-  <footer></footer>
+</div>
 </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="about.html">CV</a>
+      <a href="html_tutorial.html">HTML</a>
+      <a href="sudoku.html">Sudoku</a>
+      <a href="tic_tac_toe.html">TicTacToe</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()" class="sidenavspan"></span>
+
+    <div id="main">
+    <header class="Main Header" id="header-main">
+      <div onclick="openNav()" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <div class="Header">
+        <h1>About Me</h1>
+      </div>
+    </header>
+    <div class="about_text_background">
+    <section class="webpage_about">
+      <h2>My story</h2>
+      <br>
+      <p>My name is Philip and I grew up in a small village in the eastern part of switzerland. I was always a very active child and also started to learn to play the piano and later the guitar.
+            My favourite sport to play was soccer which I played from 6 to 24 years of age. 
+            I went to school in the same village that I grew up in and later went to the "Gymnasium" (High School) in a nearby city.
+            After I got my Matura (High School Diploma), I went on to doing the military service which is mandatory for all men in switzerland.
+            The military service was not always easy, especially in the beginning, but as a whole the service was
+            a good experience and there are always many stories to tell from this time. 
+      </p>
+      <br>
+      <p>
+          After I finished my military service I went on to study Health Sciences and Technology at ETH Zürich.
+          At this time in my life I was not sure if this was the right thing to study but as everybody always
+          says: "You got to do something". So I went on and started my Bachelor's program at ETH. At the beginning it was All
+          going pretty well and also the subjects were interesting but as time went on I realized that this field of study
+          would not be fitting for me in the future. This realization came when I had the first physics university classes.
+          I got really into physics and decided that I want to follow this path further. I decided to complete the Bachelor's 
+          degree in Health Sciences and Technology since there was only one year left to complete the diploma.
+          After I got my diploma I decided that I wanted to study Electrical Engineering since I really wanted to do 
+          something with alot of physics but also give myself the posibility to go into the direction of 
+          Computer Science / Computer Engineering.
+      </p>
+      <br>
+      <p>
+        After I got my diploma I decided that I wanted to study Electrical Engineering since I really wanted to do 
+        something with alot of physics but also give myself the posibility to go into the direction of 
+        Computer Science / Computer Engineering.
+        The physics courses were great during the Bachelor's in Electrical Engineering and during the 
+        Master's program I had the chance to shift my focus more towards Computer Science. The main focus
+        during the last year of my Master's program was Machine Learning. I learned alot about CNN's, LSTM's, Transformers
+        and all the different techniques used in Machine Learning. After all that I'm still eager to learn
+        more in the field of Machine Learning and more general in the field of Software Engineering. 
+      </p>
+      <br>
+      <p>
+          Now after all stuff about school / university, I'm also going to talk about what
+          I like to do currently to recharge my mind. As I mentioned at the beginning I learned to play
+          the piano at around 8 years old. During the last two years I rediscovered my passion
+          for playing the piano and it's now one of my most important hobby. I also still like to 
+          play the guitar but not as much as the piano at the moment. Making music alone is nice, but
+          it is even more fun when you can share it with friends. That's why I like to jam with 
+          my friends who have their own studio in their flat. 
+          As you can see, music is a big part of my life. One other thing that I like to do in my 
+          sparetime is sports. I like to go to the gym or play table-tennis, during the summer I like
+          to swim in the "Limmat" river here in Zürich. 
+      </p>
+      
+    </section>
+    </div>
+    
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Info</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2020; All Rights Reserved</p>
+    </footer>
+  </body>
+</div>
+</html>

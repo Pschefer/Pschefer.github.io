@@ -1,202 +1,310 @@
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.Header{
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.Header {
+  background-color: rgb(16, 0, 75);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #ffffff;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: white;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: flex;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-
-button{
-    margin: 0px;
-    padding: 10px 10px;
-    border: 1px solid transparent;
-    background-color: rgba(255,255,255,0);
-    
-    cursor: pointer;
-    transition: all 0.5s;
+  background-color: #ffffff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-button:hover{
-    background-color: transparent;
-    color:grey;
-    border: 1px solid black;
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: white;
 }
 
-form{
-    padding: 10px;
-    margin-top: 20px;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: flex;
 }
 
-.parent{
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+button {
+  margin: 0px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0);
+
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: grey;
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+}
+
+form {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 40px;
+
+  background: rgb(248, 246, 255);
+}
+
+.parent > div {
+  margin: 10px;
+}
+
+.child1 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.child1button {
   width: 100%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  height: 200px;
+  color: rgb(0, 5, 78);
+}
+.line-1 {
+  display: block;
+  font-size: 24px;
 }
 
-.child1{
-    width: 100%;
-    height: 200px;
-    background: rgb(236, 236, 236);
+.line-2 {
+  display: block;
+  font-size: 12px;
 }
 
-.child1button{
-    width: 100%;
-    height: 200px;
-    font-size: x-large;
+.child1button span {
+  font-size: 10;
 }
 
-
-
-.child2{
-    width: 100%;
-    height: 200px;
-    background: rgb(0, 0, 0);
-    color: white;
+.child2 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
 }
-.child2button{
-    width: 100%;
-    height: 200px;
-    font-size: x-large;
-    color: white;
+.child2button {
+  width: 100%;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 5, 78);
 }
 
-.child3{
-    width: 100%;
-    height: 200px;
-    background: rgb(236, 236, 236);
+.child3 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.child3button {
+  width: 100%;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 5, 78);
+}
+
+.child4 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.child4button {
+  width: 100%;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 5, 78);
+}
+
+.child5 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.child5button {
+  width: 100%;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 5, 78);
+}
+
+.child6 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.child6button {
+  width: 100%;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 5, 78);
+}
+
+.child7 {
+  width: 300px;
+  height: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.child7button {
+  width: 100%;
+  height: 200px;
+  font-size: x-large;
+  color: rgb(0, 5, 78);
+}
+
+.footer {
+  background: rgb(248, 246, 255);
+  text-align: center;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(16, 0, 75); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
-  .sidenavspan{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: large;
-    color: white;
-    background-color: #333;
-    width: 100%;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenavspan {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  color: white;
+  background-color: #333;
+  width: 100%;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 0px;
+}
+
+.main {
+  background-image: url("website-background1.png");
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 0px;
+  .sidenav a {
+    font-size: 18px;
   }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
 
 .menu-icon > .line {
-    background-color: #dddddd;
-    height: 2px;
-    display: block;
-    width: 26px;
-    transition: all 0.5s;
+  background-color: #dddddd;
+  height: 2px;
+  display: block;
+  width: 26px;
+  transition: all 0.5s;
 }
 .menu-icon > .line + .line {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
-.menu-icon:hover{
+.menu-icon:hover {
   background-color: transparent;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
 
+.webpage_about {
+  text-align: center;
+  padding-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background: rgb(248, 246, 255);
+}
+
+.about_text_background {
+  background: rgb(248, 246, 255);
 }

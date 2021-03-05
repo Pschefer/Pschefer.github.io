@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="about.html">CV</a>
+      <a href="html_tutorial.html">HTML</a>
+      <a href="sudoku.html">Sudoku</a>
+      <a href="tic_tac_toe.html">TicTacToe</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()" class="sidenavspan"></span>
+
+    <div id="main">
+    <header class="Main Header" id="header-main">
+      <div onclick="openNav()" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <div class="Header">
+        <h1>Semester Projects</h1>
+      </div>
+    </header>
+    <div class="about_text_background">
+    <section class="webpage_about">
+      <h2>Project 1</h2>
+      <br>
+      <p>This semester project has its main focus on the memory 
+          technology CBRAM (Conductive Bridging Random Access Memory).
+      </p>
+      <br>
+      <p>Technologies used: Python, Bash</p>
+      
+      
+      <br>
+      <h3>Abstract</h3>
+      <br>
+      <p>CBRAM is an emerging resistive, non-volatile memory technology. A crucial process in terms of switching kinetics is metal ion transport through a thin high resistance film. In order to investigate Cu ion diffusion in amorphous SiO2 a python model was developed. First, the model generates an amorphous SiO2 sample. Then, initial and final states for Nudged Elastic Band (NEB) calculations are detected. Eventually, NEB simulations are performed. The model presented in this thesis enables the simulation of a large number of NEB calculations automatically. The calculated energy for Cu diffusion in a − SiO2 is 0.95 eV with most of the values lying between 0.5 eV and 1.5 eV.</p>
+      <br>
+      <h3>Illustrations</h3>
+      <br>
+      <img src="sem_proj1.png" width="300" height="300">
+      <br>
+      <br>
+      <p>Figure 1: 2 D cross section of a generated structure. The yellow atoms represent silicon, the red atoms represent oxygen. The two blue atoms are the copper atoms which represent the initial and final states for the following NEB simulation.</p>
+
+      <br>
+      <hr>
+      <br>
+      <h2>Project 2</h2>
+      <br>
+      <p>In this project I explored the subject of Vision and Language Navigation.</p>
+      <br>
+      <p>Technologies used: Python, PyTorch, Bash</p>
+      <br>
+      <h3>Abstract</h3>
+      <br>
+      <p>To navigate an agent through a physical environment, it has to process visual and spoken instructions and clues in order to reach the goal destination. This often implies that the given information is in no way complete and missing information has to be read from context. Adding to this problem is, as almost always in any machine learning task, the problem of not enough annotated data.
+        In this project we dive further into the already done work on Vision and Language Navigation. The Speaker-Follower model as well as the environmental dropout model are used in combination with the Room-for-Room (R4R) data augmentation technique. By combining these approaches we hope to see an improvement in generalization, i.e. a higher success rate on unseen environments. Both models are trained and tested on Room-to-Room (R2R) as well as on R4R.
+        The best results were obtained by the environmental dropout model trained on R4R data. A 32.1 % success rate in unseen environments which is a 3.5 % increase considering previous models on the R4R dataset. The navigation error decreased from a previous best of 8.08 m to 7.58 m for our model which is an improvement of 0.5 m.
+        </p>
+        <br>
+        <h3>Illustrations</h3>
+        <br>
+        <img src="sem_proj2.png" width="500" height="400">
+        <br>
+        <br>
+        <p>Figure 2: General Schematic of the room-to-room task. The orange robot agent receives a spoken instruction and a panoramic action space as input. With this input it has to decide which action at time t (at) it will take. The decided action is depicted by the red arrow. It starts from the start point (red star) and tries to reach the end point (blue star). When the robot receives the spoken instruction "stop" and is within a certain threshold distance of the goal location, it successfully solved the task.
+
+        </p>
+        <br>
+        <hr>
+        
+      
+    </section>
+    </div>
+    
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Info</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &copy; 2020; All Rights Reserved</p>
+    </footer>
+  </body>
+</div>
+</html>
