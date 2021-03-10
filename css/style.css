@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-/* Animated Background 
 .css-selector {
   display: flex;
   align-items: center;
@@ -13,17 +12,7 @@
   flex-wrap: wrap;
 
   padding: 40px;
-
-  */
-.css-selector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-wrap: wrap;
-
-  padding: 40px;
-  background: linear-gradient(270deg, #bacad8, #f592a3, #b3fdb6);
+  background: linear-gradient(270deg, #ffffff, #92bdf5, #ffffff);
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 30s ease infinite;
@@ -256,7 +245,7 @@ form {
 }
 
 .footer {
-  background: rgb(248, 246, 255);
+  background: white;
   text-align: center;
   padding: 10px;
   margin-left: 200px;
@@ -317,7 +306,7 @@ form {
 }
 
 .main {
-  background-image: url("website-background1.png");
+  background-color: white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -351,9 +340,9 @@ form {
   padding-top: 100px;
   margin-left: 200px;
   margin-right: 200px;
-  background: rgb(248, 246, 255);
+  background: white;
 }
 
 .about_text_background {
-  background: rgb(248, 246, 255);
+  background: white;
 }

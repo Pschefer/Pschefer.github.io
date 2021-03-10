@@ -93,7 +93,7 @@ p.incorrect {
   border-bottom: 4px solid black;
 }
 
-footer {
-  background-color: lightgrey;
+.footer {
+  background-color: white;
   text-align: center;
 }

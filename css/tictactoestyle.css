@@ -197,3 +197,7 @@ body {
 .about_text_background {
   background: rgb(248, 246, 255);
 }
+
+.footer {
+  text-align: center;
+}
