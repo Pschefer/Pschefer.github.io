@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 
   flex-wrap: wrap;
 
@@ -52,6 +53,10 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+html {
+  height: 100vh;
 }
 
 body {
